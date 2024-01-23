@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import propTypes from "prop-types";
 import InputDate from "../../src/elements/Form/inputDate/InputDateCalender";
 import InputNumber from "../../src/elements/Form/inputNumber/index";
+
 import Button from "../elements/button";
 
 export default class BookingForm extends Component {
@@ -66,6 +67,18 @@ export default class BookingForm extends Component {
     }
   }
 
+  startBooking = () => {
+    const { data } = this.state;
+    this.props.startBooking({
+      _id: this.props.itemDetails._id,
+      duration: data.duration,
+      date: {
+        startDate: data.date.startDate,
+        endDate: data.date.endDate,
+      },
+    });
+  };
+
   render() {
     const { data } = this.state;
     const { itemDetails, startBooking } = this.props;
@@ -110,7 +123,7 @@ export default class BookingForm extends Component {
             type={`link`}
             isShadow
             href={`/checkout`}
-            onClick={startBooking}
+            onClick={this.startBooking}
             className={`w-full`}
           >
             Continue to Book

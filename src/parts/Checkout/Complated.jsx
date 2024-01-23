@@ -1,4 +1,4 @@
-import complated from "../../../public/images/complated.jpg";
+import complated from "/images/complated.jpg";
 
 export default function Complated() {
   return (
