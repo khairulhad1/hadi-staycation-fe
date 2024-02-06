@@ -5,14 +5,14 @@ import Button from "../elements/button";
 export default function Footer() {
   return (
     <footer className="container mx-auto mb-24">
-      <div className="flex flex-row mx-auto">
-        <div className="basis-2/5 w-[258px]">
+      <div className="flex flex-wrap lg:flex-row px-6 mx-auto">
+        <div className="lg:basis-2/5 w-full md:w-1/2 ">
           <IconText />
           <p className="text-base font-light text-[#B0B0B0] mt-[23px]">
             We kaboom your beauty holiday <br /> instantly and memorable.
           </p>
         </div>
-        <div className="basis-[25%]">
+        <div className="lg:basis-[25%] w-full md:w-1/2">
           <h6 className="text-[#152C5B] text-lg font-medium mb-[23px] mt-1">
             For Beginners
           </h6>
@@ -34,7 +34,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="basis-[25%]">
+        <div className="lg:basis-[25%] w-full md:w-1/2">
           <h6 className="text-[#152C5B] text-lg font-medium mb-[23px] mt-1">
             Explore Us
           </h6>
@@ -56,7 +56,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="basis-[25%]">
+        <div className="lg:basis-[25%] w-full md:w-1/2">
           <h6 className="text-[#152C5B] text-lg font-medium mb-[23px] mt-1">
             Connect Us
           </h6>

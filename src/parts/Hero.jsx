@@ -16,14 +16,14 @@ export default function Hero(props) {
   }
 
   return (
-    <section className="container pt-24 mx-auto">
-      <div className="flex items-center mx-auto">
-        <div className="w-[60%] pr-5">
-          <h1 className="text-[42px] font-bold leading-relaxed mb-3 text-[#152C5B]">
+    <section className="container px-6 pt-24 mx-auto">
+      <div className="flex items-center flex-wrap md:flex-nowrap mx-auto">
+        <div className="lg:w-[60%] pr-5">
+          <h1 className="text-3xl lg:text-[42px] font-bold leading-relaxed mb-3 text-[#152C5B]">
             Forget Busy Work, <br />
             Start Next Vacation
           </h1>
-          <p className="mb-5 mt-10 text-gray-500 w-[36%] leading-relaxed tracking-wide">
+          <p className="mb-5 mt-10 text-gray-500 lg:w-[36%] leading-relaxed tracking-wide">
             We provide what you need to enjoy your holiday with family. Time to
             make another memorable moment.
           </p>
@@ -76,18 +76,20 @@ export default function Hero(props) {
             </div>
           </div>
         </div>
-        <div className="w-2/5 relative">
-          <div style={{ width: "520px", height: "430px" }}>
-            <img
-              src={ImageHero}
-              alt="Room with couses"
-              className="absolute z-10 w-[530px] "
-            />
-            <img
-              src={Rectangle}
-              alt="Room with couses frame"
-              className=" absolute -bottom-10 right-10 w-[530px]"
-            />
+        <div className="">
+          <div className=" lg:w-2/5 ">
+            <div className="relative -left-2 mt-10 lg:right-10 lg:w-[520px] lg:h-[430px]">
+              <img
+                src={ImageHero}
+                alt="Room with couses"
+                className="z-10  lg:w-[530px] "
+              />
+              <img
+                src={Rectangle}
+                alt="Room with couses frame"
+                className="absolute -bottom-0 left-[57%] -z-10 -translate-x-1/2 lg:w-[530px]"
+              />
+            </div>
           </div>
         </div>
       </div>

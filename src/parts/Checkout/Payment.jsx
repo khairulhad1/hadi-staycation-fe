@@ -10,7 +10,7 @@ export default function Payment(props) {
   const subTotal = itemDetails.price * checkout.duration;
   const grandTotal = (subTotal * tax) / 100 + subTotal;
   return (
-    <div className="flex justify-center items-center ml-28 text-blue-950 ">
+    <div className="flex justify-center flex-wrap lg:flex-nowrap items-center lg:ml-28 text-blue-950 ">
       <div className="">
         <div className="text-blue-950 text-base font-normal leading-7 mb-5">
           Transfer Pembayaran:
@@ -45,7 +45,7 @@ export default function Payment(props) {
           </div>
         </div>
       </div>
-      <div className="border-r-2 border-slate-500 h-[432px] mx-[100px]"></div>
+      <div className="hidden md:block md:border-r-2 md:border-slate-500 md:h-[432px] md:mx-[100px]"></div>
       <div className="mt-6">
         <div className="mt-3 mb-5">
           <label htmlFor="proofPayment">Upload Bukti Transfer:</label>

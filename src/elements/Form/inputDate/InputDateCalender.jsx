@@ -13,7 +13,7 @@ export default function InputDateCalender(props) {
   const datePickerChange = (value) => {
     const target = {
       target: {
-        value: value.selection,
+        value: value.selection, // Menggunakan value secara keseluruhan
         name: name,
       },
     };
@@ -39,10 +39,8 @@ export default function InputDateCalender(props) {
     focus.indexOf(1) < 0 && setIsShowed(false);
   };
   const displayDate = `${value.startDate ? formatDate(value.startDate) : ""} ${
-    value.endDate ? "- " + formatDate(value.endDate) : ""
+    value.endDate ? " - " + formatDate(value.endDate) : ""
   }`;
-
-  console.log(value.startDate);
 
   return (
     <div className="container mx-auto" ref={refDate}>

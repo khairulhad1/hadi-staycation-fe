@@ -3,17 +3,19 @@ import Button from "../elements/button";
 export default function MostPicked(props) {
   return (
     <section
-      className="container mx-auto pt-24 mb-24"
+      className="container mx-auto px-6 pt-24 mb-24"
       ref={props.mostPickedRef}
     >
       <h4 className="text-2xl font-medium text-slate-900 mb-6">Most Picked</h4>
-      <div className="grid grid-rows-2 grid-cols-3 gap-7">
+      <div className="flex flex-wrap lg:grid lg:grid-rows-3 lg:grid-cols-3 lg:gap-7">
         {props.data.map((items, index) => {
           return (
             <div
               key={`mostpicked-${index}`}
               className={`rounded-[15px] overflow-hidden ${
-                index === 0 ? "row-span-2 h-[470px]" : "h-[216px]"
+                index === 0
+                  ? "lg:row-span-2 lg:h-[470px]"
+                  : "h-[216px] w-full mb-6"
               } transition-transform hover:scale-105`}
             >
               <div className="relative">
@@ -24,8 +26,14 @@ export default function MostPicked(props) {
                 <figure className="absolute z-0">
                   <Button type="link" href={`/properties/${items._id}`}>
                     <img
-                      src={items.imageUrl}
-                      alt={items.name}
+                      src={
+                        items.imageId[0]
+                          ? `${import.meta.env.VITE_BASE_API_URL}/${
+                              items.imageId[0].imageUrl
+                            }`
+                          : ""
+                      }
+                      alt={items.title}
                       className="object-contain transition-transform hover:scale-110"
                     />
                   </Button>
@@ -40,7 +48,7 @@ export default function MostPicked(props) {
                     href={`/properties/${items._id}`}
                     className="text-lg"
                   >
-                    {items.name}
+                    {items.title}
                   </Button>
                   <div className="text-sm text-slate-100 font-normal">
                     {items.city}, {items.country}

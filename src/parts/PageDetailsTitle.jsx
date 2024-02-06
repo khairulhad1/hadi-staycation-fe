@@ -3,16 +3,21 @@ import Breadcrumb from "../../src/elements/Breadcrumb/index";
 
 export default function PageDetailsTitle({ data, breadcrumb }) {
   return (
-    <div className="container mx-auto mt-14">
-      <div className="grid grid-cols-3 gap-4 h-[82px] items-center">
-        <Breadcrumb data={breadcrumb} className={`col-start-1 col-end-2 `} />
-        <div className="col-start-2 col-end-3  text-center">
-          <div className="text-center text-blue-950 text-4xl font-semibold mb-3">
-            {data.name}
+    <div className="container mx-auto px-6 mt-14">
+      <div className="lg:grid lg:grid-cols-3 lg:gap-4 lg:h-[82px] lg:items-center">
+        <Breadcrumb
+          data={breadcrumb}
+          className={`lg:col-start-1 lg:col-end-2 `}
+        />
+        <div className="flex items-center justify-center lg:col-start-2 lg:col-end-3  lg:text-center">
+          <div className="mt-6">
+            <div className="text-center text-blue-950 text-2xl lg:text-4xl font-semibold lg:mb-3">
+              {data.title}
+            </div>
+            <span className="lg:h-6 px-4 text-center text-zinc-400 text-base lg:text-lg font-light">
+              {data.city}, {data.country}
+            </span>
           </div>
-          <span className="h-6 text-center text-zinc-400 text-lg font-light">
-            {data.city}, {data.country}
-          </span>
         </div>
       </div>
     </div>
