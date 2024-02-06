@@ -1,7 +1,7 @@
 import React from "react";
 import Star from "../elements/star";
 import testimonyFrame from "../../src/assets/images/testimony-frame.jpg";
-import Button from "../elements/button";
+import Button from "../elements/button/Button";
 
 export default function Testimony({ data }) {
   return (

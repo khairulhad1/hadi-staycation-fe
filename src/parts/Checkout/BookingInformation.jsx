@@ -1,4 +1,4 @@
-import InputText from "../../../src/elements/InputText/index";
+import InputText from "../../elements/InputText/InputText";
 
 export default function BookingInformation(props) {
   const { data, itemDetails, checkout } = props;

@@ -1,5 +1,5 @@
 import propTypes from "prop-types";
-import Button from "../button";
+import Button from "../button/Button";
 
 export default function Breadcrumb(props) {
   const className = [props.className];

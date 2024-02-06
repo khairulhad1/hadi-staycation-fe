@@ -1,7 +1,7 @@
 import logoBca from "../../assets/images/bca.jpg";
 import logoMandiri from "../../assets/images/mandiri.jpg";
-import InputFile from "../../../src/elements/InputFile/index";
-import InputText from "../../../src/elements/InputText/index";
+import InputFile from "../../elements/InputFile/InputFile";
+import InputText from "../../elements/InputText/InputText";
 
 export default function Payment(props) {
   const { data, itemDetails, checkout } = props;

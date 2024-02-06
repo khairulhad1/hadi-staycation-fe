@@ -31,7 +31,7 @@ Stepper.propTypes = {
   initialStep: propTypes.string,
 };
 
-export { default as Numbering } from "./Numbering";
-export { default as Meta } from "./Meta";
-export { default as Controller } from "./Contoller";
-export { default as MainContent } from "./MainContent";
+export { default as Numbering } from "./Numbering/Numbering";
+export { default as Meta } from "./Meta/Meta";
+export { default as Controller } from "./Contoller/Controller";
+export { default as MainContent } from "./MainContent/MainContent";

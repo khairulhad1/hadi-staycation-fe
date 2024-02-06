@@ -2,7 +2,7 @@
 
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-import axios from "../../configs/axios/index";
+import axios from "../../configs/axios/instanceAxios";
 
 export const postCheckout = createAsyncThunk(
   "checkout/postCheckout",

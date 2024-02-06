@@ -1,4 +1,4 @@
-import Button from "../elements/button";
+import Button from "../elements/button/Button";
 
 export default function Activities({ data }) {
   if (data.length === 0) return null;

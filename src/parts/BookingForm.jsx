@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
 import InputDate from "../../../new-stycation-bwa/src/elements/Form/inputDate/InputDateCalender";
-import InputNumber from "../../../new-stycation-bwa/src/elements/Form/inputNumber/index";
-import Button from "../../../new-stycation-bwa/src/elements/button";
+import InputNumber from "../elements/Form/inputNumber/inputNumber";
+import Button from "../elements/button/Button";
 
 function BookingForm({ itemDetails, startBooking }) {
   const navigate = useNavigate();

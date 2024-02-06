@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import IconText from "./IconText.jsx";
-import Button from "../elements/button/index.jsx";
+import Button from "../elements/button/Button.jsx";
 import { useLocation } from "react-router-dom";
 
 export default function Header(props) {

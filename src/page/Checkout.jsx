@@ -19,8 +19,8 @@ import Stepper, {
   Meta,
   MainContent,
   Controller,
-} from "../../src/elements/Stepper/";
-import Button from "../elements/button";
+} from "../elements/Stepper/Stepper";
+import Button from "../elements/button/Button";
 
 const Checkout = () => {
   const navigate = useNavigate();
