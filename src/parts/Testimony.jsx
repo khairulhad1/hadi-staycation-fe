@@ -1,5 +1,5 @@
 import React from "react";
-import Star from "../elements/star";
+import Star from "../elements/star/star.jsx";
 import testimonyFrame from "../../src/assets/images/testimony-frame.jpg";
 import Button from "../elements/button/Button";
 

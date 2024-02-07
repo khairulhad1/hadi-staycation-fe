@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-import axios from "../../configs/axios/index";
+import axios from "../../configs/axios/instanceAxios.jsx";
 
 export const getPage = createAsyncThunk("page/getPage", async () => {
   const response = await axios.get(`/landing-page`);

@@ -1,4 +1,4 @@
-import Button from "../elements/button";
+import Button from "../elements/button/Button.jsx";
 
 export default function Categories({ data }) {
   return data.map((category, index1) => {

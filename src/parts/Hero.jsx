@@ -4,7 +4,7 @@ import Rectangle from "../../src/assets/images/rectangle.jpg";
 import IconCities from "../../src/assets/images/icon-trevel-svg/cities.svg";
 import IconTraveler from "../../src/assets/images/icon-trevel-svg/traveler.svg";
 import IconTreasure from "../../src/assets/images/icon-trevel-svg/treasure.svg";
-import Button from "../elements/button";
+import Button from "../elements/button/Button.jsx";
 import formatNumber from "../utils/formatNumber";
 
 export default function Hero(props) {

@@ -1,5 +1,5 @@
 import React from "react";
-import Breadcrumb from "../../src/elements/Breadcrumb/index";
+import Breadcrumb from "../elements/Breadcrumb/Breadcrumb.jsx";
 
 export default function PageDetailsTitle({ data, breadcrumb }) {
   return (

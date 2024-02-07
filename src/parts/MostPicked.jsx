@@ -1,4 +1,4 @@
-import Button from "../elements/button";
+import Button from "../elements/button/Button.jsx";
 
 export default function MostPicked(props) {
   return (
