@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
-import InputDate from "../../../new-stycation-bwa/src/elements/Form/inputDate/InputDateCalender";
+import InputDate from "../elements/Form/inputDate/InputDateCalender";
 import InputNumber from "../elements/Form/inputNumber/inputNumber";
 import Button from "../elements/button/Button";
 
